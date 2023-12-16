@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        header{
+
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 700;
+            font-size: 4em;
+            font-family:monospace;
+        }
+        body{
+            background: url(solar.jpg);
+
+        }
+        div{
+            margin: auto;
+            width: 700px;
+            border: 1px solid black;
+            background-color: rgb(230, 224, 224);
+            border-radius: 0.5em;
+            padding: 20px 10px 10px 10px;
+        }
+        .form{
+            margin-left: 2em;
+        }
+        #note{
+            font-size: 21px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 0.8em;
+        }
+        button{
+            font-size: 1em;
+            background-color: #6ba2ce;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width: 80px;
+            margin: 10px;
+        }
+        #name,#email,#rating{
+            height: 20px;
+            width: 280px;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        #happen{
+            height: 30px;
+            width: 250px;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        @media screen and (min-width:576px) 
+        {
+        .title{left: 12%;
+               top: 8%;        
+            }
+        }    
+    </style>
+    </head>
+    <body>
+        <main>
+            <header>Sign Up</header>
+            <div>
+                <p id="note">It's free and only takes a minute</p>
+                <form method="POST" class="form">
+                    <label for="first_name">First Name</label>
+                    <br>
+                    <input type="text" id="name" name="user_name" required>
+                    <br><br>
+                    <label for="last_name">Last Name</label>
+                    <br>
+                    <input type="text" id="name" name="user_name" required>
+                    <br><br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="rating" name="password" required  >
+                    <br><br>
+                    <label for="confirm_password">Confirm Password</label>
+                    <br>
+                    <input type="password" id="rating" name="confirm_password" required  >
+                    <br><br>
+                    <br><br>
+                    <button type="submit" id="btn">Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
