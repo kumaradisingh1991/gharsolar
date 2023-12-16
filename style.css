@@ -42,8 +42,8 @@ ul li a:hover{
 }
 .title{
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 18%;
+    left: 8%;
     transform: translate(-50%,-50%);
 }
 .title h1{
@@ -70,8 +70,8 @@ ul li a:hover{
     color: black;
 }
 @media screen and (min-width:576px) {
-.title{ top: 15%;
-        left: 13%;
+.title{left: 12%;
+       top: 8%;    
       
     }
   }
