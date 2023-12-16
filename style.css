@@ -31,20 +31,15 @@ ul li a:hover{
 }    
 .logo img{
     float: left;
-    left: 2%;
-    top: 2%;
-    width: 100px;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 300px;
     height: auto;
+    background-color:white;
 }
 .main{
     max-width: 1530px;
     margin: auto;
-}
-.title{
-    position: absolute;
-    top: 18%;
-    left: 8%;
-    transform: translate(-50%,-50%);
 }
 .title h1{
     color: white;
