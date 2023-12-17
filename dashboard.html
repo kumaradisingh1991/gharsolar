@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Poppins',sans-serif;
+        }
+        body{
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .btn{
+            background: orange;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        .btn:hover{
+            color: orange;
+            background: white;
+            padding: 3px 8px;
+            border: 2px solid orange;
+        }
+        .sidemenu{
+            position: fixed;
+            background: orange;
+            width: 20vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction:  column;
+        }
+        .sidemenu .Gharsolar{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidemenu li{
+            font-size: 24px;
+            margin-top: 5%;
+            padding: 30px 40px;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+        .sidemenu li:hover{
+            background: white;
+            color: black;
+
+        }
+        .container{
+            position: absolute;
+            right: 0;
+            width: 80vw;
+            height: 100vh;
+            background: white;
+
+        }
+        .container .header{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80vw;
+            height: 10vh;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        }
+        .container .header .nav{
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+        .container .header .nav .search{
+            flex: 3;
+            display: flex;
+            justify-content: center;
+    
+        }
+        .container .header .nav .search .input[type=text]{
+            border: none;
+            background: white;
+            padding: 10px;
+            width: 100%;
+
+
+        }
+        .container .header .nav .search button{
+            width: 20px;
+            height: 20px;
+            border: none;
+        }
+        .container .header .nav .search button img{
+            width: 20px;
+            height: 20px;
+        }
+        .container .header .nav .user{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container .header .nav .user img{
+            width: 40px;
+            height: 40px;
+
+        } 
+
+        .container .header .nav .user .userimg{
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        .container .header .nav .user .userimg img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        @media screen and (min-width:1050px) {
+           .sidemenu{font-size: 18px;
+                       
+      
+        }
+    }
+        @media screen and (min-width:536px) {
+           .sidemenu li{
+            font-size: 20px;
+           }
+            
+            
+        }
+        }              
+
+
+    </style>
+</head>
+<body>
+    <div class="sidemenu">
+        <div class="logo">
+            <img src="logo.svg">
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Buy</li>
+            <li>Settings</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="search">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <div class="userimg">
+                        <img src="user.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
