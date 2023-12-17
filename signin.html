@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .logo img{
+    float: left;
+    width: 300px;
+    height: auto;
+}
+        header{
+
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 700;
+            margin-left: 350px;
+            font-size: 4em;
+            font-family:monospace;
+            display: inline-block;
+        }
+
+        body{
+            background-color: #fff
+
+        }
+        div{
+           background-color:lightgray;
+        }
+        .form{
+             width: 250px;
+             height: 380px;
+             background: linear-gradient(to top,white(0,0,0,0.8)50%,white(0,0,0,0.8)50%);
+             position: absolute;
+             margin-top: 40px;
+             left: 610px;
+             transform: translate(0%,-5%);
+             border-radius: 10px;
+             padding: 25px;
+        }
+        .form h2{
+         width: 220px;
+         font-family: sans-serif;
+         text-align: center;
+         color: #ff7200;
+         font-size: 22px;
+         background-color: #fff;
+         border-radius: 10px;
+         margin: 2px;
+         padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 35px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+  #note{
+            font-size: 21px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 0.8em;
+        }
+        button{
+            font-size: 1em;
+            background-color: #6ba2ce;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width: 80px;
+            margin: 10px;
+        }
+        #name,#email,#rating{
+            height: 20px;
+            width: 280px;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        #happen{
+            height: 30px;
+            width: 250px;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        @media screen and (min-width:576px) 
+        {
+        .title{left: 12%;
+               top: 8%;        
+            }
+        }    
+    </style>
+    </head>
+    <body>
+        <main>
+            <div class="logo">
+                <img src="logo.svg">
+            </div>
+            <header>Sign Up</header>
+                
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+                
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+            </div>
+        </main>
+    </body>
+</html>
